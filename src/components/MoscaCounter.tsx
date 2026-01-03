@@ -68,7 +68,7 @@ const MoscaCounter: React.FC<MoscaCounterProps> = ({ players, rounds, onAddRound
       </div>
 
       {/* Historial Optimizado para 6 Jugadores */}
-      <section className="bg-surface-container-low rounded-xl border border-outline-variant/20 overflow-hidden shadow-inner flex flex-col flex-1 min-h-0 mb-20">
+      <section className="bg-surface-container-low rounded-xl border border-outline-variant/20 overflow-hidden shadow-inner flex flex-col flex-1 min-h-0">
         <header className="px-4 py-2 border-b border-outline-variant/10 flex justify-between items-center bg-surface-container-high shrink-0">
           <h3 className="text-[9px] font-black uppercase tracking-widest text-on-surface-variant opacity-60">Historial</h3>
           <span className="text-[9px] font-bold text-outline">
@@ -123,8 +123,8 @@ const MoscaCounter: React.FC<MoscaCounterProps> = ({ players, rounds, onAddRound
         </div>
       </section>
 
-      {/* Botón Flotante sincronizado con La Canasta */}
-      <div className="fixed bottom-[68px] left-4 right-4 z-40">
+      {/* Botón fijo que siempre es visible - arriba del footer */}
+      <div className="fixed bottom-16 left-0 right-0 px-4 z-40">
         <button
           onClick={() => setShowDialog(true)}
           className="w-full bg-primary text-on-primary h-14 rounded-2xl font-black text-base shadow-xl shadow-primary/30 flex items-center justify-center gap-2 active:scale-95 transition-all"

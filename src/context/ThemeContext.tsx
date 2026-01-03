@@ -1,6 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { ThemeMode, generateM3Theme, applyThemeToDocument } from '../services/themeUtils';
+import { ThemeMode, generateM3Theme, applyThemeToDocument } from '../utils/themeUtils';
 
 interface ThemeContextType {
   seedColor: string;
