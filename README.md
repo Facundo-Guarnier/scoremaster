@@ -62,7 +62,6 @@ La aplicación estará disponible en `http://localhost:5173`
 - **React Router** - Enrutamiento SPA
 - **Lucide React** - Iconografía
 - **Material Color Utilities** - Sistema de colores dinámicos
-- **Netlify** - Hosting y despliegue
 
 ---
 
@@ -71,8 +70,6 @@ La aplicación estará disponible en `http://localhost:5173`
 ```
 scoremaster/
 ├── public/            # Archivos estáticos (favicon, imágenes)
-├── netlify/
-│   └── functions/     # Netlify Functions
 ├── src/
 │   ├── components/
 │   │   ├── common/    # Componentes reutilizables (Navbar, Footer)
@@ -80,7 +77,6 @@ scoremaster/
 │   │   └── *Counter.tsx   # Contadores específicos por juego
 │   ├── context/       # Context API (tema, estado del juego)
 │   ├── pages/         # Páginas de la aplicación
-│   ├── services/      # Servicios y utilidades
 │   ├── types/         # Tipos TypeScript
 │   ├── utils/         # Funciones auxiliares
 │   ├── App.tsx        # Componente principal
