@@ -28,7 +28,7 @@ export const BrandFooter: React.FC<BrandFooterProps> = ({
   const appVersion = "1.0.0";
   const brandName = "Guarnold";
   const brandUrl = "https://guarnold.com.ar";
-  const repoUrl = "https://github.com/faguarnier";
+  const repoUrl = "https://github.com/Facundo-Guarnier/scoremaster";
 
   // Get theme state from context
   const { isDark } = useTheme();
