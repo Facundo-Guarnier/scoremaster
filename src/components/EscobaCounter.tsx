@@ -53,7 +53,7 @@ const EscobaCounter: React.FC<EscobaCounterProps> = ({ players, rounds, onAddRou
         ))}
       </div>
 
-      <section className="bg-surface-container-high rounded-xl border border-outline-variant overflow-hidden shadow-inner flex flex-col flex-1 min-h-0 mb-20">
+      <section className="bg-surface-container-high rounded-xl border border-outline-variant overflow-hidden shadow-inner flex flex-col flex-1 min-h-0">
         <header className="px-3 py-2 bg-surface-container-highest/50 border-b border-outline-variant/30 flex justify-between items-center shrink-0">
           <h3 className="text-[10px] font-black uppercase tracking-widest text-on-surface">Historial</h3>
           <span className="bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-lg text-[9px] font-black">
@@ -98,8 +98,8 @@ const EscobaCounter: React.FC<EscobaCounterProps> = ({ players, rounds, onAddRou
         </div>
       </section>
 
-      {/* Botón Normalizado y bajado */}
-      <div className="fixed bottom-[68px] left-4 right-4 z-40">
+      {/* Botón fijo que siempre es visible - arriba del footer */}
+      <div className="fixed bottom-16 left-0 right-0 px-4 z-40">
         <button
           onClick={() => setShowDialog(true)}
           className="w-full bg-primary text-on-primary h-14 rounded-2xl font-black text-base shadow-xl shadow-primary/30 flex items-center justify-center gap-2 active:scale-95 transition-all"

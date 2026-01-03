@@ -111,7 +111,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
         </div>
       </header>
 
-      <main className="flex-1 overflow-hidden relative flex flex-col">
+      <main className="flex-1 overflow-y-auto relative flex flex-col">
         {children}
       </main>
 
